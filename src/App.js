@@ -4,6 +4,7 @@ import {
   Route,
 } from "react-router-dom";
 import Profile from "./Profile"
+import Fallback from "./Fallback"
 
 import './App.css';
 
@@ -11,9 +12,8 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/:uuid" component={Profile}>
-          <Profile />
-        </Route>
+        <Route path="/:uuid" component={Profile} />
+        <Route path="/" component={Fallback} />
       </Switch>
     </Router>
   )
