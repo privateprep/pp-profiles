@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders fallback page as default', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const fallbackElement = screen.getByText(/reached the profile site/i);
+  expect(fallbackElement).toBeInTheDocument();
 });
