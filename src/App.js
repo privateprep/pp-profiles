@@ -1,17 +1,22 @@
-import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Profile from "./Profile"
+
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello world
-        </p>
-      </header>
-    </div>
-  );
+    <Router>
+      <Switch>
+        <Route path="/:uuid" component={Profile}>
+          <Profile />
+        </Route>
+      </Switch>
+    </Router>
+  )
 }
 
 export default App;
