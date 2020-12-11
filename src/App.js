@@ -3,6 +3,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import Menu from "./Menu";
 import Profile from "./Profile"
 import Fallback from "./Fallback"
 
@@ -11,12 +12,15 @@ import './App.css';
 
 const App = () => {
   return (
-    <Router>
-      <Switch>
-        <Route path="/:uuid" component={Profile} />
-        <Route path="/" component={Fallback} />
-      </Switch>
-    </Router>
+    <>
+      <Menu />
+      <Router>
+        <Switch>
+          <Route path="/:uuid" component={Profile} />
+          <Route path="/" component={Fallback} />
+        </Switch>
+      </Router>
+    </>
   )
 }
 

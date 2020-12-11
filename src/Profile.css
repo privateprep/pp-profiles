@@ -5,7 +5,7 @@
 
 .Profile {
   margin: 2rem 0 0;
-  padding: 0;
+  padding: 1rem;
   display: flex;
   align-items: stretch;
   flex-flow: column;
@@ -93,26 +93,9 @@
   content: "";
 }
 
-.Profile__bio {
-  max-width: 720px;
-  margin: 2rem auto;
-}
-
-.Profile__bio h4 {
-  margin: 0;
-  line-height: 2.4rem;
-  /* small caps */
-  text-transform: uppercase;
-  font-family: Futura,Futura Std,sans-serif;
-  font-weight: 700;
-  letter-spacing: .275rem;
-  font-size: 1.1rem;
-}
-
 @media (max-width: 599.5px) {
   .Profile {
     margin: 0 0 2rem;
-    border: 1px solid #c4cdd5;
   }
 
   .Profile__content {
@@ -127,6 +110,7 @@
 @media (min-width: 600px) {
   .Profile {
     flex-flow: row wrap;
+    padding: 0;
   }
 
   .Profile__media {
