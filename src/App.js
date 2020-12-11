@@ -6,6 +6,7 @@ import {
 import Profile from "./Profile"
 import Fallback from "./Fallback"
 
+import "./fonts/fonts.css";
 import './App.css';
 
 const App = () => {
