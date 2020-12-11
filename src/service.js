@@ -1,4 +1,5 @@
-import fetch from "cross-fetch";
+// react-app-polyfill covers fetch/promises
+// see https://github.com/facebook/create-react-app/blob/master/packages/react-app-polyfill/README.md
 
 // pulled from dashboard on 12/10/2020
 // token helpers
