@@ -17,12 +17,16 @@ const Profile = () => {
   );
 
   if (isLoading && !hasFetched) {
-    return <p>Loading...</p>;
+    return (
+      <div className="container">
+        <h2 style={{ margin: '4rem' }}>Loading...</h2>
+      </div>
+    )
   }
 
   if (isRejected) {
     return (
-      <div>
+      <div className="container">
         <h1>{`Oh no! That's an error!`}</h1>
         <p>{`Here is some more information if you want to take a look...`}</p>
         <details>
