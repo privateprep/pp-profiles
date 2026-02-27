@@ -93,6 +93,12 @@
   content: "";
 }
 
+.ProfileBioContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 @media (max-width: 599.5px) {
   .Profile {
     margin: 0 0 2rem;
